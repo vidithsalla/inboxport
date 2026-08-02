@@ -26,6 +26,14 @@ InboxPort addresses three things:
 The preview uses fictional account names and addresses. A second capture shows
 the [three-part control model](assets/inboxport-controls-1080x1262.jpg).
 
+## Motion demo
+
+[Watch the 42-second InboxPort product video](assets/inboxport-linkedin-ad.mp4).
+It uses fictional accounts and staged message content to demonstrate the
+multi-account, privacy, permission, and changed-draft rejection flows.
+
+<img src="assets/inboxport-send-blocked-poster.jpg" alt="InboxPort blocks a send after the approved draft changes" width="800" />
+
 ## What is implemented
 
 - Direct Gmail API and Microsoft Graph adapters
