@@ -19,6 +19,13 @@ InboxPort addresses three things:
    The owner grants search, body-read, draft, and send-request permissions per
    account, and can pause or revoke them later.
 
+## Interface preview
+
+<img src="assets/inboxport-landing-hero-1080x1262.jpg" alt="InboxPort landing page showing multiple Gmail and Outlook accounts and the no-retained-inbox model" width="800" />
+
+The preview uses fictional account names and addresses. A second capture shows
+the [three-part control model](assets/inboxport-controls-1080x1262.jpg).
+
 ## What is implemented
 
 - Direct Gmail API and Microsoft Graph adapters
@@ -113,4 +120,3 @@ license does not grant permission to copy or redistribute its contents.
 - [Approved-send protocol](docs/approval-flow.md)
 - [Verification evidence](docs/verification.md)
 - [Known limitations](docs/limitations.md)
-
