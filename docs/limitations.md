@@ -3,10 +3,9 @@
 InboxPort is an invite-only prototype. The following limits are current and
 material.
 
-## Validation and demand
+## Validation limits
 
 - Usage has been limited to the builder and invited personal contacts.
-- There is no evidence yet of independent retention or integration demand.
 - Automated tests are extensive, but live end-to-end provider testing remains
   limited.
 - The project has not undergone an independent penetration test or security
@@ -37,10 +36,9 @@ material.
 - Revocation blocks future InboxPort access but cannot erase mail already
   delivered to an AI client.
 
-## Product constraint
+## Scope boundary
 
 InboxPort controls access to email but does not itself own an email workflow
-such as triage, follow-up management, or scheduling. The current pilot is also
-testing whether the right long-term form is a standalone product, a component
-inside an AI email experience, or infrastructure for teams building agents.
-
+such as triage, follow-up management, or scheduling. The current prototype
+intentionally focuses on the access-control and approval layer between AI
+clients and connected Gmail and Outlook accounts.

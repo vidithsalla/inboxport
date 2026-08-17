@@ -26,9 +26,9 @@ InboxPort addresses three things:
 The preview uses fictional account names and addresses. A second capture shows
 the [three-part control model](assets/inboxport-controls-1080x1262.jpg).
 
-## Motion demo
+## Demo
 
-[Watch the 42-second, 16:9 InboxPort product video](assets/inboxport-linkedin-ad.mp4).
+[Watch the 42-second, 16:9 InboxPort demo video](assets/inboxport-linkedin-ad.mp4).
 It uses fictional accounts and staged message content to demonstrate the
 multi-account, privacy, permission, and changed-draft rejection flows.
 
@@ -47,7 +47,7 @@ multi-account, privacy, permission, and changed-draft rejection flows.
 - Encrypted provider credentials and short-lived access-token refresh
 - Account pause, client revocation, and account disconnect controls
 
-The private implementation currently has **227 passing unit and security
+The August 2, 2026 verification run recorded **227 passing unit and security
 tests**, a clean lint run, a clean standalone TypeScript check, and a successful
 production Next.js build. See [verification evidence](docs/verification.md) for
 the tested boundaries and the limits of that evidence.
@@ -112,13 +112,10 @@ coverage but has not undergone an independent security audit.
 
 ## Repository scope
 
-This public repository contains the architecture, threat model, privacy model,
-approval protocol, limitations, and verification evidence. The implementation
-is private during the controlled pilot because it contains deployment-specific
-security boundaries that are still being reviewed.
-
-This is not presented as open-source software. A public repository without a
-license does not grant permission to copy or redistribute its contents.
+This public repository is the technical case study for InboxPort. It contains
+the architecture, threat model, privacy model, approval protocol, limitations,
+verification evidence, and demo assets. The application implementation remains
+private.
 
 ## Documents
 

@@ -2,8 +2,8 @@
 
 Last verified: August 2, 2026.
 
-The private implementation was checked in its current uncommitted launch state
-after comparing it with the earlier independent review commit.
+These results were recorded against the private implementation on August 2,
+2026.
 
 ## Automated results
 
@@ -48,4 +48,3 @@ an independent security assessment.
 
 The public repository intentionally reports both the passing checks and these
 limits so that test count is not mistaken for external validation.
-
