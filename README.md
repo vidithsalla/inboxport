@@ -28,7 +28,7 @@ the [three-part control model](assets/inboxport-controls-1080x1262.jpg).
 
 ## Demo
 
-[Watch the InboxPort Demo Video](assets/inboxport-linkedin-ad.mp4).
+[Watch the InboxPort demo video](assets/inboxport-linkedin-ad.mp4).
 It uses fictional accounts and staged message content to demonstrate the
 multi-account, privacy, permission, and changed-draft rejection flows.
 
@@ -44,7 +44,7 @@ multi-account, privacy, permission, and changed-draft rejection flows.
 - Human approval before sending
 - Draft re-fetch and hash verification immediately before dispatch
 - Content-minimized audit events
-- Encrypted provider credentials and short-lived access-token refresh
+- Encrypted provider credentials; provider access tokens refreshed just in time
 - Account pause, client revocation, and account disconnect controls
 
 The August 2, 2026 verification run recorded **227 passing unit and security
@@ -104,7 +104,7 @@ authorized AI client or browser that requested it.
 
 InboxPort is an invite-only prototype, not a production security product.
 Google's Gmail scopes are restricted, the Google OAuth app remains in Testing,
-and a broader launch would require Google's verification process and any
+and a broader public access would require Google’s verification process and any
 applicable security assessment. The project has automated security-boundary
 coverage but has not undergone an independent security audit.
 
