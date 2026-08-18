@@ -28,7 +28,7 @@ the [three-part control model](assets/inboxport-controls-1080x1262.jpg).
 
 ## Demo
 
-[Watch the 42-second, 16:9 InboxPort demo video](assets/inboxport-linkedin-ad.mp4).
+[Watch the InboxPort Demo Video](assets/inboxport-linkedin-ad.mp4).
 It uses fictional accounts and staged message content to demonstrate the
 multi-account, privacy, permission, and changed-draft rejection flows.
 
