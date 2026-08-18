@@ -104,7 +104,7 @@ authorized AI client or browser that requested it.
 
 InboxPort is an invite-only prototype, not a production security product.
 Google's Gmail scopes are restricted, the Google OAuth app remains in Testing,
-and a broader public access would require Google’s verification process and any
+and broader public access would require Google’s verification process and any
 applicable security assessment. The project has automated security-boundary
 coverage but has not undergone an independent security audit.
 
