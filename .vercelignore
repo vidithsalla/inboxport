@@ -1,0 +1,7 @@
+.next
+dist
+.sites-runtime
+.vinext
+.wrangler
+coverage
+*.log

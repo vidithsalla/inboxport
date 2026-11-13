@@ -1,0 +1,58 @@
+{
+  "name": "relay-mail-console",
+  "version": "0.3.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0",
+    "npm": ">=11.10.0 <12"
+  },
+  "packageManager": "npm@11.21.2",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "npm run test:unit && npm run build",
+    "test:unit": "node --experimental-strip-types --experimental-test-module-mocks --test tests/unit/*.test.ts",
+    "lint": "eslint . --ignore-pattern .next",
+    "secrets:generate": "node scripts/generate-dev-secrets.mjs",
+    "smoke:local": "bash scripts/smoke-local.sh",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "dependencies": {
+    "@clerk/mcp-tools": "0.9.0",
+    "@clerk/nextjs": "7.9.26",
+    "@libsql/client": "^0.17.4",
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "drizzle-orm": "0.45.2",
+    "google-auth-library": "10.9.0",
+    "lucide-react": "^0.468.0",
+    "mcp-handler": "1.1.0",
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zod": "4.6.7"
+  },
+  "overrides": {
+    "esbuild": "0.28.2",
+    "minimatch": "11.0.8",
+    "mcp-handler": {
+      "@modelcontextprotocol/sdk": "1.32.2"
+    }
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "dotenv": "^17.4.2",
+    "drizzle-kit": "0.31.11",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.4.6",
+    "react-server-dom-webpack": "19.3.1",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3"
+  },
+  "type": "module",
+  "displayName": "InboxPort MCP Access Manager"
+}

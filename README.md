@@ -47,10 +47,12 @@ multi-account, privacy, permission, and changed-draft rejection flows.
 - Encrypted provider credentials; provider access tokens refreshed just in time
 - Account pause, client revocation, and account disconnect controls
 
-The August 2, 2026 verification run recorded **227 passing unit and security
-tests**, a clean lint run, a clean standalone TypeScript check, and a successful
-production Next.js build. See [verification evidence](docs/verification.md) for
-the tested boundaries and the limits of that evidence.
+The November 13, 2026 verification run recorded **229 passing unit and security
+tests**, clean lint and TypeScript checks, a successful production Next.js
+build, zero known npm or OSV dependency vulnerabilities, zero Semgrep findings,
+and zero Gitleaks findings in the publication tree. See
+[verification evidence](docs/verification.md) for the tested boundaries and the
+limits of that evidence.
 
 ## How a request moves
 
@@ -112,10 +114,27 @@ coverage but has not undergone an independent security audit.
 
 ## Repository scope
 
-This public repository is the technical case study for InboxPort. It contains
-the architecture, threat model, privacy model, approval protocol, limitations,
-verification evidence, and demo assets. The application implementation remains
-private.
+This repository contains the reviewed application implementation, automated
+security-boundary tests, database migrations, architecture and threat-model
+documents, verification evidence, and demo assets. The source was imported as
+a reviewed snapshot without the private development repository's Git history,
+ignored environment files, internal agent tooling, or video-production source.
+
+## Local verification
+
+Use the pinned npm release and placeholder-only environment template:
+
+```bash
+npx --yes npm@11.21.2 ci
+npx --yes npm@11.21.2 run lint
+npx --yes npm@11.21.2 exec tsc -- --noEmit
+npx --yes npm@11.21.2 run test:unit
+npx --yes npm@11.21.2 exec next -- build --webpack
+```
+
+Copy `.env.example` to an ignored local file only when you are ready to
+configure your own Clerk, Turso, Gmail, and Microsoft credentials. Never commit
+that file.
 
 ## Documents
 
@@ -124,4 +143,5 @@ private.
 - [Threat model](docs/threat-model.md)
 - [Approved-send protocol](docs/approval-flow.md)
 - [Verification evidence](docs/verification.md)
+- [Publication security review](docs/security-review-2026-11-13.md)
 - [Known limitations](docs/limitations.md)

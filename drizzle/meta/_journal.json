@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1784651312101,
+      "tag": "0000_gray_moonstone",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1784651896023,
+      "tag": "0001_lame_mindworm",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1784755199113,
+      "tag": "0002_nasty_the_renegades",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1784757591510,
+      "tag": "0003_glamorous_namor",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1784759303922,
+      "tag": "0004_fancy_colleen_wing",
+      "breakpoints": true
+    }
+  ]
+}

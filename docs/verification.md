@@ -1,19 +1,26 @@
 # Verification evidence
 
-Last verified: August 2, 2026.
+Last verified: November 13, 2026.
 
-These results were recorded against the private implementation on August 2,
-2026.
+These results were recorded against the reviewed source snapshot imported into
+this repository.
 
 ## Automated results
 
 | Check | Result |
 |---|---|
-| Unit and security tests | 227 passed, 0 failed |
-| ESLint | Passed |
+| Unit and security tests | 229 passed, 0 failed |
+| ESLint | Passed with 0 warnings |
 | Standalone TypeScript check | Passed |
-| Production Next.js build | Passed |
+| Production Next.js build | Passed with Next.js 16.4.6 using webpack |
 | Git whitespace validation | Passed |
+| npm audit, root and video project | 0 known vulnerabilities |
+| OSV-Scanner, both lockfiles | 0 known vulnerabilities |
+| Semgrep full private-tree security/OWASP/secrets rules | 0 findings across 167 tracked files |
+| Semgrep exact staged public snapshot | 0 findings across 109 scanned code/config files |
+| Gitleaks publication-tree scan | 0 findings |
+| Gitleaks private-history scan | 0 findings across 45 commits |
+| Gitleaks existing public-history scan | 0 findings across 5 commits |
 
 ## Covered behaviors
 
@@ -37,6 +44,9 @@ Representative automated coverage includes:
 - Cross-approval ciphertext swap rejection
 - Header-injection validation
 - Same-origin checks for state-changing routes
+- Loopback-only enforcement for authentication-bypassing demo mode
+- Feedback relay rejection of redirects and credential-bearing URLs
+- Constant-time cron-secret comparison
 
 ## What the numbers do not prove
 
@@ -46,5 +56,7 @@ provider fakes. Live testing has been limited, Google restricted-scope approval
 has not been completed for a public launch, and the prototype has not received
 an independent security assessment.
 
-The public repository intentionally reports both the passing checks and these
-limits so that test count is not mistaken for external validation.
+The repository intentionally reports both the passing checks and these limits
+so that test and scanner counts are not mistaken for external validation. See
+the [publication security review](security-review-2026-11-13.md) for scan scope
+and remediations.
